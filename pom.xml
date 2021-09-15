@@ -23,7 +23,7 @@
   <parent>
   	<artifactId>turbine-parent</artifactId>
   	<groupId>org.apache.turbine</groupId>
-  	<version>8</version>
+  	<version>9-SNAPSHOT</version>
   </parent>
   
   <groupId>org.apache.fulcrum</groupId>
@@ -42,18 +42,17 @@
     a release of the fulcrum-parent POM.
   -->
   <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/turbine/fulcrum/trunk/site</connection>
-    <developerConnection>scm:svn:http://svn.apache.org/repos/asf/turbine/fulcrum/trunk/site</developerConnection>
-    <url>http://svn.apache.org/viewvc/turbine/fulcrum/trunk/site</url>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/turbine-fulcrum-site.git</connection>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/turbine-fulcrum-site.git</developerConnection>
+    <url>https://gitbox.apache.org/repos/asf/turbine-fulcrum-site.git</url>
   </scm>
   
       <!-- Required for staging to work -->
+    <!-- distributionManagement id and url defined in parent, adapt turbine.site.path -->
      <distributionManagement>
-    <site>
-        <id>turbine.apache.org</id>
-        <name>Fulcrum Subproject Main Website</name>
-        <url>scm:svn:https://svn.apache.org/repos/infra/websites/production/turbine/content/fulcrum/</url>
-      </site>    
+        <site>
+            <name>Fulcrum Subproject Main Website</name>
+          </site>    
      </distributionManagement> 
   
   <mailingLists>
@@ -222,9 +221,10 @@
         <artifactId>maven-scm-publish-plugin</artifactId>
         <configuration>
           <content>${siteContent.path}</content>
-          <pubScmUrl>scm:svn:${turbine.scmPubUrl}</pubScmUrl>
+          <pubScmUrl>scm:git:${turbine.scmPubUrl}</pubScmUrl>
           <checkoutDirectory>${turbine.scmPubCheckoutDirectory}</checkoutDirectory>
           <tryUpdate>true</tryUpdate>
+          <scmBranch>asf-site</scmBranch>
           <!--dryRun>true</dryRun-->
           <skipDeletedFiles>true</skipDeletedFiles>
           <ignorePathsToDelete>
@@ -299,7 +299,7 @@
   </reporting>
   
   <properties>
-   <turbine.site.path>fulcrum</turbine.site.path>
+   <turbine.site.path>turbine-fulcrum-site</turbine.site.path>
    <turbine.site.cache>${project.build.directory}/fulcrum-sites</turbine.site.cache>
    <siteContent.path>${project.build.directory}/staging</siteContent.path>
    <turbine.scmPubCheckoutDirectory>${turbine.site.cache}/site</turbine.scmPubCheckoutDirectory>
