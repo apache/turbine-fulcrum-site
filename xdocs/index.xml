@@ -30,7 +30,7 @@
    <p>
      Fulcrum was originally created as part of the Turbine 3 effort.  The idea
      was to be able to decouple the services from Turbine 2 allowing them to be
-     used on both projects. Turbine 4 uses now (2017) more than 15 Fulcrum components.
+     used on both projects. Turbine 4/5 uses now about 15 Fulcrum components.
    </p>
    <p>
      Fulcrum has evolved into a component repository based on the Avalon framework.
@@ -82,14 +82,15 @@
         Create issues and comments in Apache JIRA system <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+TRB+AND+component+%3D+Fulcrum">Turbine (Component Fulcrum)
         </a></li>
     <li>
-        You can also access the <a href="https://svn.apache.org/viewvc/turbine/fulcrum/trunk/">Turbine Fulcrum SVN
-        repository</a></li>
+        You can  access the <a href="https://github.com/apache/turbine-fulcrum-build/">Turbine Fulcrum GIT Build
+        repository</a> or find the individual Fulcrum compnents from there. 
+        The SVN Repo <a href="https://svn.apache.org/viewvc/turbine/fulcrum/trunk/">Fulcrum SVN Build</a> still exists, but has been set to readonly mode.</li>
 
     <li>
-        You can access the <a href="https://github.com/apache/turbine-fulcrum/">Turbine Fulcrum sub project Git (read only)
-        repository</a></li>   
+        You can access the <a href="https://github.com/apache/turbine-fulcrum-build/">Turbine Fulcrum sub project Git
+        repository</a>. N.B. https://github.com/apache/turbine-fulcrum/ has been moved to this fully git-enabled repository.</li>   
   
- 
+
 </ul>
 
 </section>

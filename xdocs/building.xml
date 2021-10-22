@@ -39,14 +39,27 @@
 
     <section name="Building all Fulcrum components">
       <p>
-        Building Fulcrum from SVN is now very easy because it has been
-        Maven-enabled.  Before you begin, you'll need to check out the
-        <code>turbine-fulcrum</code> SVN repository (if you are
-        not familiar with the Apache SVN repositories, please refer to
-        the <a href="http://apache.org/dev/version-control.html">documentation</a>).
+        Building Fulcrum from GIT is very easy because it has been
+        Maven-enabled.  
+        
+        To get all Fulcrum dependencies you may find it conveniet to get all of them in one repo.
+        
+        Therefore you would begin with <code>turbine-fulcrum-build</code> GIT repository (if you are
+        not familiar with the Apache GIT repositories, please refer to
+        the <a href="https://infra.apache.org/version-control.html">documentation</a>).
+        
         <source>
-        svn checkout http://svn.apache.org/repos/asf/turbine/fulcrum/trunk/
-        </source>
+        git clone --recurse-submodules https://github.com/apache/turbine-fulcrum-build.git  </source>
+        
+        You get all current Fulcrum components (thanks to git submodules) in one repo!
+        
+        Of course each fulcrum component has it's own repository. Find them in .gitmodules and select, what you want.
+        eihter using the gitbos repo URLs or the github repo 
+        <source>
+        git clone  https://gitbox.apache.org/repos/asf/turbine-fulcrum-parser.git
+        // equivalent
+        git clone https://github.com/apache/turbine-fulcrum-parser.git </source>
+        
       </p>
     <h4>Maven 3 Build</h4>
       <p>
@@ -59,8 +72,7 @@
         From the root directory of the Fulcrum project (where you checked
         out the code to or unpacked a source distribution), simply run 
         <source>
-        mvn install
-        </source>
+        mvn install </source>
          This will start a process that will
         build each component.  After the component is built, it will be
         installed into you local maven repository. 
@@ -68,8 +80,7 @@
       <p>
        To build a local copy of the documentation, use this: 
        <source>
-        mvn site
-        </source>
+        mvn site   </source>
        This will build a local copy of the web site in the 'target/site' directory. 
        Note, this uses a LOT of memory. If you can't build all of them, build them individually.  
       </p>
@@ -80,12 +91,12 @@
           complete build.  One approach to take is to turn off running unit tests
       <source><![CDATA[
     $  mvn site -DskipTests=true
-   ]]></source>
+]]></source>
          and/or excluding various components:
          </p>   
        <source><![CDATA[
     $  mvn -pl parser,crypto site
-    ]]></source>
+]]></source>
       </subsection>
     </section>
   </body>

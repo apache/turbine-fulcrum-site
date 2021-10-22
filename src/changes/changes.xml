@@ -25,7 +25,16 @@
   </properties>
 
   <body>
-    <release version="2.0.0" date="SVN">
+    <release version="3.0.0" date="IN VERSION CONTROL">
+      <action dev="gk" type="update">
+       -  Update to git SCM, turbine parent 9,
+        - Use modern skin, compatible with maven-site-plugin version 3.8.2
+     </action>
+      <action dev="tv" type="update">
+        Replace viewcvs with viewvc. Fixes TRB-95
+     </action>
+     </release>
+    <release version="2.0.0" date="2013-12-06">
      <action dev="tv" type="update">
        Moved security site to proper
      </action>

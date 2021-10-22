@@ -23,12 +23,12 @@
   <parent>
   	<artifactId>turbine-parent</artifactId>
   	<groupId>org.apache.turbine</groupId>
-  	<version>9-SNAPSHOT</version>
+  	<version>9</version>
   </parent>
   
   <groupId>org.apache.fulcrum</groupId>
   <artifactId>fulcrum-site</artifactId>
-  <version>2.0.0</version>
+  <version>3.0.0</version>
   <packaging>pom</packaging>
   <name>Fulcrum Component Library</name>
   <url>http://turbine.apache.org/fulcrum</url>

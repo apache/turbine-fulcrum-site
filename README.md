@@ -9,11 +9,24 @@ into .html files using Maven.
 
 ## Description
 
-The Fulcrum site builds the wrapper site for the Fulcrum components listed in site.xml.
+The Fulcrum site builds the *wrapper site* for the Fulcrum components listed in site.xml. 
+
+It is a Website repository, which is used to provides a mechanism (Management Tool) to *publish Turbine Fulcrum Components*, see [Apache Project site](https://infra.apache.org/project-site).
+
+Build Tool is the Maven site building mechanism, though this includes a version it does not contain released sources to be published and versioning of this component is just for convenience (or unavoidable in pom.xml). Nevertheless Apache Site management rules apply.
 
 ### Publishing
 
-Using scm-publish Plugin, cft. https://commons.apache.org/site-publish.html for publishing:
+This is described in section *Git Checkout source. Generate and Publish Site* here:
+
+    https://github.com/apache/turbine-fulcrum-build#git-checkout--source-generate-and-publish-site
+    
+The basic mechanism is explained [here](https://infra.apache.org/version-control.html#git).    
+    
+
+### Deprecated SCM-Publish Maven Mechanism
+
+*Important*: Using [scm-publish Plugin](https://commons.apache.org/site-publish.html) for publishing is not yet tested for current [Apache GIT](https://infra.apache.org/version-control.html).
 
 Check first, that turbine.site.path matches the target pubScmUrl (e.g. by investigating the result of mvn help:effective-pom)
 
