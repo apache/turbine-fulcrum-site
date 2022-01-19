@@ -45,14 +45,11 @@
     <menu name="Released Components">
       <item name="Cache"                 href="/fulcrum-cache/"/>
       <item name="Crypto"                href="/fulcrum-crypto/"/>
-      <item name="Factory"               href="/fulcrum-factory/"/>
-      <item name="HsqlDB"                href="/fulcrum-hsqldb/"/>      
+      <item name="Factory"               href="/fulcrum-factory/"/>     
       <item name="Intake"                href="/fulcrum-intake/"/>    
       <item name="JSON"             href="/fulcrum-json/"/> 
       <item name="Localization"          href="/fulcrum-localization/"/>
-      <item name="Mimetype"              href="/fulcrum-mimetype/"/>
       <item name="Parser"                href="/fulcrum-parser/"/>
-      <item name="PBE"                   href="/fulcrum-pbe/"/>
       <item name="Pool"                  href="/fulcrum-pool/"/>
       <item name="Quartz"                href="/fulcrum-quartz/"/>
       <item name="Security"              href="/fulcrum-security/" collapse="true">
@@ -61,10 +58,8 @@
         <item name="Hibernate Impl"        href="/fulcrum-security/fulcrum-security-hibernate/"/>
         <item name="Torque Impl"           href="/fulcrum-security/fulcrum-security-torque/"/>
       </item>      
-      <item name="Spring"          	     href="/fulcrum-spring/"/> 
       <item name="Test Container"         href="/fulcrum-testcontainer/"/>
       <item name="Upload"                 href="/fulcrum-upload/"/>
-      <item name="XSLT"                   href="/fulcrum-xslt/"/>
       <item name="YAAFI"                  href="/fulcrum-yaafi/"/>
       <item name="YAAFI Crypto"           href="/fulcrum-yaafi-crypto/"/>
     </menu>
@@ -76,18 +71,23 @@
       <item name="Template"              href="/fulcrum-template/"/>
     </menu>
 
-    <menu name="Dormant Components">
+    <menu name="Dormant Components (svn only)">
       <item name="BSF"                   href="/fulcrum-bsf/"/>
       <item name="Configuration"         href="/fulcrum-configuration-impl/"/>
       <item name="DVSL"                  href="/fulcrum-dvsl/"/>      
       <item name="Groovy"                href="/fulcrum-groovy/"/>      
+      <item name="HsqlDB"                href="/fulcrum-hsqldb/"/> 
       <item name="Jetty"                href="/fulcrum-jetty/"/>  
+      <item name="Mimetype"              href="/fulcrum-mimetype/"/>
        <item name="Naming"                href="/fulcrum-naming/"/>      
        <item name="OSWorkflow"            href="/sites/osworkflow.html" collapse="true">
            <item name="OSWorkflow"            href="/fulcrum-osworkflow/"/>
            <item name="OSWorkflow Example"    href="/fulcrum-osworkflow-example/"/>
        </item>
+      <item name="PBE"                   href="/fulcrum-pbe/"/>
+      <item name="Spring"          	     href="/fulcrum-spring/"/> 
       <item name="XMLRPC"                 href="/fulcrum-xmlrpc/"/>      
+      <item name="XSLT "                   href="/fulcrum-xslt/"/>
     </menu>
 
     <menu ref="reports" inherit="bottom" />
