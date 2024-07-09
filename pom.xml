@@ -23,7 +23,7 @@
   <parent>
   	<artifactId>turbine-parent</artifactId>
   	<groupId>org.apache.turbine</groupId>
-  	<version>12-SNAPSHOT</version>
+  	<version>13-SNAPSHOT</version>
   </parent>
   
   <groupId>org.apache.fulcrum</groupId>
